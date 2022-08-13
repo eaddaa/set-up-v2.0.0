@@ -1,6 +1,5 @@
 # set-up-v2.0.0
-# Set up a v2.0.0
-(This guide was created in collaboration with eaddaa#8291)
+
 <br>
 
 In current example we will learn how to set up IBC relayer between two cosmos chains
