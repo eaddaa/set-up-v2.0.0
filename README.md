@@ -56,7 +56,7 @@ In current example we will learn how to set up IBC relayer between two cosmos ch
 
 # NEXT - COPY ALL ONE COMAND TO TERMINAL
 ```
-sudo tee $HOME/.relayer/config/config.yaml > /dev/null <<EOF
+tee $HOME/.relayer/config/config.yaml > /dev/null <<EOF
 global:
     api-listen-addr: :5183
     timeout: 10s
@@ -85,7 +85,7 @@ chains:
         type: cosmos
         value:
             key: $KEY2
-            chain-id: STRIDE-TESTNET-2
+            chain-id: STRIDE-TESTNET-4
             rpc-addr: http://$IP2:$PORT2
             account-prefix: stride
             keyring-backend: test
@@ -102,7 +102,7 @@ chains:
 paths:
     task:
         src:
-            chain-id: STRIDE-TESTNET-2
+            chain-id: STRIDE-TESTNET-4
             client-id: 07-tendermint-0
             connection-id: connection-0
             port-id: icacontroller-GAIA.DELEGATION,transfer,icacontriiler-GAIA.FEE,icacontroller-GAIA.WITHDRAWAL,icacontroller-GAIA.REDEMPTION
